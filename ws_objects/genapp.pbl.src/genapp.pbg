@@ -1,0 +1,18 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "genapp.pbl" "";
+@end;
+@begin Objects 
+ "genapp.sra" "genapp.pbl";
+ "d_test.srd" "genapp.pbl";
+ "p_genapp_exe.srj" "genapp.pbl";
+ "m_genapp_main.srm" "genapp.pbl";
+ "p_test.srp" "genapp.pbl";
+ "s_1.srs" "genapp.pbl";
+ "uo_1.sru" "genapp.pbl";
+ "uo_2.sru" "genapp.pbl";
+ "uo_add.sru" "genapp.pbl";
+ "w_genapp_about.srw" "genapp.pbl";
+ "w_genapp_about2.srw" "genapp.pbl";
+ "w_genapp_main.srw" "genapp.pbl";
+@end;

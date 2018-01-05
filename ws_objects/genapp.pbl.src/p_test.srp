@@ -1,0 +1,9 @@
+﻿$PBExportHeader$p_test.srp
+PIPELINE(source_connect=PB Demo DB V2017R2 Unicode,destination_connect=PB Demo DB V2017R2,type=create,commit=100,errors=100,keyname="bonus_x")
+SOURCE(name="bonus",COLUMN(type=long,name="emp_id",dbtype="integer",key=yes,nulls_allowed=no)
+ COLUMN(type=date,name="bonus_date",dbtype="date",key=yes,nulls_allowed=no,initial_value="today")
+ COLUMN(type=decimal,name="bonus_amount",dbtype="numeric(9,2)",nulls_allowed=yes))
+RETRIEVE(statement="PBSELECT(TABLE(NAME=~"bonus~") COLUMN(NAME=~"bonus.emp_id~") COLUMN(NAME=~"bonus.bonus_date~") COLUMN(NAME=~"bonus.bonus_amount~") )")
+DESTINATION(name="bonus",COLUMN(type=long,name="emp_id",dbtype="integer",key=yes,nulls_allowed=no,initial_value="0")
+ COLUMN(type=date,name="bonus_date",dbtype="date",key=yes,nulls_allowed=no,initial_value="today")
+ COLUMN(type=decimal,name="bonus_amount",dbtype="numeric(9,2)",nulls_allowed=yes))
