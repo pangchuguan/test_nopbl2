@@ -17,7 +17,7 @@ forward prototypes
 public function integer get_add (integer ai_a, integer ai_b)
 end prototypes
 
-public function integer get_add (integer ai_a, integer ai_b);return ai_a + ai_b +1
+public function integer get_add (integer ai_a, integer ai_b);return ai_a + ai_b +1 + 2
 end function
 
 on uo_add.create
