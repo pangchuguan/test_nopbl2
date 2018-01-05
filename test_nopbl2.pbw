@@ -4,5 +4,5 @@ Save Format v3.0(19990112)
  1 "webservice.pbt";
  2 "assembly.pbt";
 @end;
-DefaultTarget "genapp.pbt";
-DefaultRemoteTarget "genapp.pbt";
+DefaultTarget "assembly.pbt";
+DefaultRemoteTarget "assembly.pbt";
